@@ -16,7 +16,7 @@ namespace GoCardlessConsole
             Console.WriteLine("Go Cardless sandbox demo");
             Console.WriteLine("In the UK, use the sort code 200000 and the account number 55779911");
             // Think this requires VS 2017
-            GoCardlessClient client = GoCardlessClient.Create(
+            var client = GoCardlessClient.Create(
                 // We recommend storing your access token in an
                 // configuration setting for security
                 ConfigurationManager.AppSettings["GoCardlessAccessToken"],
